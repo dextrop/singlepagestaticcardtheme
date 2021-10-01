@@ -1,0 +1,10 @@
+.search-area {
+    line-height: 100px;
+    height: 100px;
+    margin-top: 50px;
+}
+.searchbox {
+    width: 96%;
+    margin-bottom: 30px;
+    margin-left: 2%;
+}

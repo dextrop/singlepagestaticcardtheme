@@ -1,0 +1,24 @@
+<div class="product-card">
+    <div class="card">
+      <div class="card__face card__face--front">
+        <div class="img info" style="background: url({{product_image}});">
+        </div>
+        <!-- <img class="img" [src]="product_image"> -->
+        <div class="info">
+          <h2>{{product_name}}</h2>
+          <span *ngFor="let number of [0,1,2,3,4]">
+            <svg *ngIf="rating > number" fill="#FFC324" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+            <svg *ngIf="rating < number" fill="#DCDCDC" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+          </span>
+          <small>{{rated_by}} Reviews</small>
+          <p class="product-description" style="margin-top: 10px;">{{product_description}}</p>
+          <span class="banner" *ngIf="category_1 != ''">{{category_1}}</span>
+          <span class="banner" *ngIf="category_2 != ''">{{category_2}}</span> 
+          <div class="reviews" style="margin-top: 10px;">            
+            <div class="address"> <i class="fas fa-map-marked"></i> {{address}}</div>
+            <div class="button-area">
+                <a [href]="link" target="blank">Click Know More</a>
+            </div>      
+        </div>
+    </div>
+</div>
