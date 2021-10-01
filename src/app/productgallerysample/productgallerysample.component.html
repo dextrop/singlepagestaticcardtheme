@@ -1,0 +1,17 @@
+<app-navbar></app-navbar>
+<div class="cus-container" style="width: 80%; margin-left: 10%;">
+    <div class="row">          
+        <app-productsearch (keyupevents)="applyFilter($event)"></app-productsearch>  
+        <p style="text-align: center; font-size: 14px;color: rgba(0,0,0,0.6);">Showing {{shown_data.length }} items ....</p>
+        <div class="col-md-3" *ngFor="let school of shown_data" style="padding: 10px;">
+            <app-productcard 
+                [product_name]="school.school_name" 
+                [product_description]="school.about"
+                [product_image]="school.image"
+                [address]="school.full_address"
+                [category_1]="school.established"
+                [category_2]="school.classes"
+            ></app-productcard>
+        </div>   
+    </div>   
+</div>

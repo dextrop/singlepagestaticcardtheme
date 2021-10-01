@@ -1,27 +1,22 @@
 # Productgallery
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.2.
+View project demo at https://dextrop.github.io/singlepagestaticcardtheme/
 
-## Development server
+## Intregration Steps
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Add Bootstrap and Font Awesome to index.html 
+- For Bootstrap [Bootstrap Get Started](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+- For Font Awesome `<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">`
 
-## Code scaffolding
+Once done user can either reuse the component directly by renaming it 
+#### Or 
+can add `loginsignupsliderlayout` to app.module.ts. Create your component login
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```shell
+ng g c login
+```
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+inside login component edit login.component.html
+```html
+<app-loginsignupsliderlayout></app-loginsignupsliderlayout>
+```
