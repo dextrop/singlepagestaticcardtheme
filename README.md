@@ -1,6 +1,6 @@
 # Productgallery
 
-View project demo at https://dextrop.github.io/singlepagestaticcardtheme/
+![image](https://jennie-uploaded-assets.s3.ap-south-1.amazonaws.com/Screenshot%202021-10-01%20at%206.56.55%20PM.png)
 
 ## Intregration Steps
 
