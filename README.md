@@ -1,6 +1,6 @@
 # Productgallery
 
-![image](https://jennie-uploaded-assets.s3.ap-south-1.amazonaws.com/Screenshot%202021-10-01%20at%206.56.55%20PM.png)
+![image](https://jennie-uploaded-assets.s3.ap-south-1.amazonaws.com/Screenshot 2021-09-26 at 8.17.04 PM.png)
 
 ## Intregration Steps
 
